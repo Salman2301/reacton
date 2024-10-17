@@ -1,7 +1,9 @@
 import '@src/Popup.css';
+
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
-import { exampleThemeStorage } from '@extension/storage';
+
 import type { ComponentPropsWithoutRef } from 'react';
+import { exampleThemeStorage } from '@extension/storage';
 
 const notificationOptions = {
   type: 'basic',
@@ -16,7 +18,6 @@ const Popup = () => {
   const logo = isLight ? 'popup/logo_vertical.svg' : 'popup/logo_vertical_dark.svg';
   const goGithubSite = () =>
     chrome.tabs.create({ url: 'https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite' });
-
   const injectContentScript = async () => {
     const [tab] = await chrome.tabs.query({ currentWindow: true, active: true });
 
