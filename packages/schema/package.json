@@ -1,0 +1,10 @@
+{
+  "name": "@extension/schema",
+  "version": "0.3.3",
+  "description": "chrome extension - schema",
+  "main": "message.ts",
+  "private": true,
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
