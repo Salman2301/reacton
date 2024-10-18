@@ -45,7 +45,7 @@ const Popup = () => {
           <img src={chrome.runtime.getURL(logo)} className="App-logo" alt="logo" />
         </button>
         <p>
-          Edit <code>pages/popup/src/Popup.tsx</code>
+          Edit 1 <code>pages/popup/src/Popup.tsx</code>
         </p>
         <button
           className={
